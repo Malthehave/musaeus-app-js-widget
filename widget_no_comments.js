@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             iframe.setAttribute('id', 'frame' + i); 
             iframe.setAttribute('frameborder', '0'); 
             iframe.setAttribute('scrolling', 'no'); 
-            iframe.setAttribute('allowfullscreen', 'true'); 
+            iframe.setAttribute('allowfullscreen'); 
             iframe.setAttribute('style', 'min-width: 100%; max-width: 200px; width: 800px; min-height: 100%; border: none; margin: auto; display: table; !important;');
             widget_link.parentNode.replaceChild(iframe, widget_link); 
             iFrameResize({ log: false, bodyMargin: '60px' }, '#frame' + i) 
