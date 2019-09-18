@@ -1,0 +1,21 @@
+{
+  "name": "musaeus-js-widget",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/widget.js",
+  "scripts": {
+    "start": "parcel demo/index.html",
+    "prebuild": "rm -rf dist",
+    "build": "parcel build src/widget.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Malthehave/musaeus-app-js-widget.git"
+  },
+  "author": "Malthe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Malthehave/musaeus-app-js-widget/issues"
+  },
+  "homepage": "https://github.com/Malthehave/musaeus-app-js-widget#readme"
+}
