@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             iframe.setAttribute('allowFullScreen', ''); // Set the allow fulscreen to true. Used for the video
             iframe.setAttribute('style', 'min-width: 100%; min-height: 100%; border: none; margin: 0 auto; display: table; !important;');
             widget_link.parentNode.replaceChild(iframe, widget_link); // And now we replace the old child with our new one (the iframe)
-            iFrameResize({ log: false, bodyMargin: '10px' }, '#frame' + i) // And we use Iframe Resizer library to determine the height
+            iFrameResize({ log: false, bodyMargin: '10px' }, '#frame' + i); // And we use Iframe Resizer library to determine the height
         }
     }
 });
