@@ -2,8 +2,8 @@ var script = document.currentScript ||
 /*Polyfill*/ Array.prototype.slice.call(document.getElementsByTagName('script')).pop();
 var params = (script.getAttribute('plugin-data') || '').split(/, */);
 
-// url = "http://127.0.0.1:8000/" + params[0]; // Set the url
-url = "https://musaeus-app.herokuapp.com/" + params[0]; // Set the url
+url = "http://127.0.0.1:8000/" + params[0]; // Set the url
+// url = "https://musaeus-app.herokuapp.com/" + params[0]; // Set the url
 
 // Function to add a script to the dom
 function addScript(src, callback) {
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     addScript('https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/3.5.1/iframeResizer.min.js', main);
     function main() {
         var widget_link, iframe, i, widget_links; // Declare our variables
-        widget_links = document.getElementById('poll-app-widget'); // This is our widget class div, that we need to append our iframe to
+        widget_links = document.getElementById('musaeus-app-widget'); // This is our widget class div, that we need to append our iframe to
         for (i = 0; i <= Object.keys(widget_links).length; i++) { // We make a for loop if we have mutiple widgets to add an iframe to
             widget_link = widget_links; // We make sure we're adding to the correct widget class
             iframe = document.createElement('iframe'); // Let's create our iframe
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             iframe.setAttribute('frameborder', '0'); // Here we make the border = 0
             iframe.setAttribute('scrolling', 'no'); // Make sure the iframe can't be scrolled
             iframe.setAttribute('allowFullScreen', ''); // Set the allow fulscreen to true. Used for the video
-            iframe.setAttribute('style', 'min-width: 100%; min-height: 100%; border: none; margin: 0 auto; display: table; !important;');
+            iframe.setAttribute('style', 'min-width: 100%; min-height: 100%; border: none; margin: 0 auto; border-radius: 12px; box-shadow: 0 2px 5px rgba(0, 0, 0, .4); display: table; !important;');
             widget_link.parentNode.replaceChild(iframe, widget_link); // And now we replace the old child with our new one (the iframe)
             iFrameResize({ log: false, bodyMargin: '10px' }, '#frame' + i); // And we use Iframe Resizer library to determine the height
         }
