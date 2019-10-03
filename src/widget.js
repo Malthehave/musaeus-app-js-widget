@@ -3,7 +3,7 @@ var script = document.currentScript ||
 var params = (script.getAttribute('plugin-data') || '').split(/, */);
 
 // url = "http://127.0.0.1:8000/" + params[0]; // Set the url
-url = "https://musaeus-app.herokuapp.com/" + params[0]; // Set the url
+url = "https://app.musaeus.dk/" + params[0]; // Set the url
 
 // Function to add a script to the dom
 function addScript(src, callback) {
