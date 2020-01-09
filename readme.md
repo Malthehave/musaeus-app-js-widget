@@ -1,8 +1,8 @@
-# Musaeus - JS Widget
+# Julenu - JS Widget
 
-![](https://musaeus.dk/static/media/Logo+Namelogo+name512w.226a0cca.svg)
+![](https://julenu.dk/static/media/Logo+Namelogo+name.50b66e73.png)
 
 #H1 header
-The JS code used to inject services from Musaeus to client website
+The JS code used to inject services from Julenu to client website
 Want to learn more?
-Contact: [info@musaeus.dk](mailto:info@musaeus.dk "info@musaeus.dk")
+Contact: [info@julenu.dk](mailto:info@julenu.dk "info@julenu.dk")

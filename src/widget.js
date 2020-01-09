@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         for (let i = 0; i < elms.length; i++) { // Loop over each id
             plugin = elms[i].dataset.plugin; // Get the correct plugin data
             if (typeof(plugin) == 'undefined') { break } // If no plugin data is specified break the loop 
-            url = "https://app.musaeus.dk/" + plugin; // Set the url for the iframe
+            url = "https://app.julenu.dk/" + plugin; // Set the url for the iframe
             iframe = document.createElement('iframe'); // Let's create our iframe
             iframe.setAttribute('src', url); // The website to use in the Iframe
             iframe.setAttribute('id', 'frame' + i); // Set a unique id
